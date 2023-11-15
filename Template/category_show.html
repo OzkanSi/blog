@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Start your development with JoeBLog landing page.">
+    <meta name="author" content="Devcrud">
+    <title>JoeBLog | Free Bootstrap 4.3.x template</title>
+    <!-- font icons -->
+    <link rel="stylesheet" href="assets/vendors/themify-icons/css/themify-icons.css">
+    <!-- Bootstrap + JoeBLog main styles -->
+	<link rel="stylesheet" href="/static/css/joeblog.css">
+</head>
+<body data-spy="scroll" data-target=".navbar" data-offset="40" id="home">
+    
+    <!-- page First Navigation -->
+    <nav class="navbar navbar-light bg-light">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="/static/imgs/logo.svg" alt="">
+            </a>
+            <div class="socials">
+                <a href="javascript:void(0)"><i class="ti-facebook"></i></a>
+                <a href="javascript:void(0)"><i class="ti-twitter"></i></a>
+                <a href="javascript:void(0)"><i class="ti-pinterest-alt"></i></a>
+                <a href="javascript:void(0)"><i class="ti-instagram"></i></a>
+                <a href="javascript:void(0)"><i class="ti-youtube"></i></a>
+            </div>
+        </div>
+    </nav>
+    <!-- End Of First Navigation -->
+
+    <!-- Page Second Navigation -->
+    <nav class="navbar custom-navbar navbar-expand-md navbar-light bg-primary sticky-top">
+        <div class="container">
+            <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav">                     
+                    <li class="nav-item">
+                        <a class="nav-link" href="http://127.0.0.1:8000/#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="no-sidebar.html">No Sidebar</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="single-post.html">Single Post</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Dropdown
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#">Action</a>
+                            <a class="dropdown-item" href="#">Another action</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">Something else here</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled" href="#">Disabled</a>
+                    </li>
+                </ul>
+                <div class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a href="components.html" class="ml-4 btn btn-dark mt-1 btn-sm">Components</a>
+                    </li>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- End Of Page Second Navigation -->
+    
+    <!-- page-header -->
+    <header class="page-header"></header>
+    <!-- end of page header -->
+
+    <div class="container">
+        <section>
+            <div class="feature-posts">
+                <a href="single-post.html" class="feature-post-item">                       
+                    <span>Featured Posts</span>
+                </a>
+                <a href="single-post.html" class="feature-post-item">
+                    <img src="assets/imgs/img-1.jpg" class="w-100" alt="">
+                    <div class="feature-post-caption">Incidunt Quaerat</div>
+                </a>
+                <a href="single-post.html" class="feature-post-item">
+                    <img src="assets/imgs/img-2.jpg" class="w-100" alt="">
+                    <div class="feature-post-caption">Culpa Ducimus</div>
+                </a>
+                <a href="single-post.html" class="feature-post-item">
+                    <img src="assets/imgs/img-3.jpg" class="w-100" alt="">
+                    <div class="feature-post-caption">Temporibus Simile</div>
+                </a>
+                <a href="single-post.html" class="feature-post-item">
+                    <img src="assets/imgs/img-4.jpg" class="w-100" alt="">
+                    <div class="feature-post-caption">Adipisicing</div>
+                </a>
+            </div>
+        </section>
+        <hr>
+        <div class="page-container">
+            <div class="page-content">
+                
+                <hr>
+                
+                <div class="row"> 
+                    {% for post in items %}                      
+                    <div class="col-lg-6">
+                        <div class="card text-center mb-5">
+                            <div class="card-header p-0">                                   
+                                <div class="blog-media">
+                                    <img src="{{post.image.url}}" alt="" class="w-100">
+                                    <a href="#" class="badge badge-primary">{{post.category}}</a>        
+                                </div>  
+                            </div>
+                            <div class="card-body px-0">
+                                <h5 class="card-title mb-2">{{post.title}}</h5>    
+                                <small class="small text-muted">{{post.yearpublished}} 
+                                    <span class="px-2">-</span>
+                               
+                                </small>
+                                <p class="my-2">{{post.content}}</p>
+                            </div>
+                            
+                            <div class="card-footer p-0 text-center">
+                                <a href="{{post.get_absolute_url}}" class="btn btn-outline-dark btn-sm">READ MORE</a>
+                            </div>                  
+                        </div>
+                        
+                    </div> 
+                    {% endfor %} 
+                </div>
+                
+                
+                <button class="btn btn-primary btn-block my-4">Load More Posts</button>
+            </div>
+
+            <!-- Sidebar -->
+            <div class="page-sidebar text-center">
+                <h6 class="sidebar-title section-title mb-4 mt-3">About</h6>
+                <img src="/static/imgs/bio.jpeg" alt="" class="circle-100 mb-3">
+                <p>Özkan Şişik</p>
+                <p>Software QA Engineer</p>
+                
+
+               
+
+                <h6 class="sidebar-title mt-5 mb-4">Tags</h6>
+                <div class="category">
+                    <div class="category-list">
+                        {% for item in cat %}
+                             <a href="{% url 'category_show' category_slug=item.slug %}" class="badge badge-primary m-1" >{{item.title}}</a> 
+                        {% endfor %}
+                        </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+
+    <!-- Page Footer -->
+    <footer class="page-footer">
+             
+    </footer>
+    <!-- End of Page Footer -->
+
+	<!-- core  -->
+    <script src="assets/vendors/jquery/jquery-3.4.1.js"></script>
+    <script src="assets/vendors/bootstrap/bootstrap.bundle.js"></script>
+
+    <!-- JoeBLog js -->
+    <script src="assets/js/joeblog.js"></script>
+
+</body>
+</html>

@@ -19,9 +19,14 @@ from django.urls import path
 from django.conf.urls.static import static
 from django.conf import settings
 from blog.views import index
+from blog.views import post_detail, category_show
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', index, name = 'index')
+    path('', index, name = 'index'),
+    #path('', filter, name = 'filter'),
+    path('post/<slug:slug>/', post_detail, name ='detail'),  
+    path('cat/<slug:category_slug>', category_show, name='category_show'), 
+    
 ]
 urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
 urlpatterns += static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)

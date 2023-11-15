@@ -1,0 +1,481 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Özkan Şişik - Personal Blog Website" />
+    <title>Özkan Şişik - Personal Blog Website</title>
+  <!--favicon-img--> 
+   <link rel="icon" type="image/png" href="/static/images/favicon.png">
+   <!--favicon-img-->
+   <!--main css file should not be removed -->
+    <link rel="stylesheet" href="/static/css/index.css">
+    <!--main css file-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.6/gsap.min.js"></script>
+</head>
+<body>
+    <!--contains all the div-->
+    <div id="all">
+    <!--mouse  follower-->
+        <div class="cursor"></div>
+    <!--mouse  follower-->
+    <!--loader-->
+        <div id="loader">
+            <span class="color">Özkan</span>Şişik
+        </div>
+    <!--loader-end-->
+    <!--link-screen-->
+        <div id="breaker">
+        </div>
+        <div id="breaker-two">
+        </div>
+    <!--link-screen-->
+        <!--Main-Section-->
+        <!--Navigator-fullscreen-->
+        <div id="navigation-content">
+            {%<div class="logo">
+                <img src="/static/images/logoo.jpeg" alt="logo">
+            </div>
+            <div class="navigation-close">
+                <span class="close-first"></span>
+                <span class="close-second"></span>
+            </div>
+            <div class="navigation-links">
+                <a href="#" data-text="HOME" id="home-link" >HOME</a>
+                <a href="#" data-text="ABOUT" id="about-link" >ABOUT</a>
+                <a href="#" data-text="BLOG" id="blog-link" >BLOG</a>
+                <a href="#" data-text="CONTACT" id="contact-link" >CONTACT</a>
+            </div>
+        </div>
+        <!--Navigator-Fullscreen END-->
+          <!--Home Page-->
+        <!--Menubar-->
+        <div id="navigation-bar">
+            <img src="/static/images/logoo.jpeg" alt="logo">
+            <div class="menubar">
+                <span class="first-span"></span>
+                <span class="second-span"></span>
+                <span class="third-span"></span>
+            </div>
+        </div>
+        <!--Menubar End-->
+          <!--Header-->
+        <div id="header">
+            <div id="particles"></div>
+              <!--Social Media Links-->
+            <div class="social-media-links">
+               <a href="#"><img src="static/images/instagram logo.png" class="social-media" alt="instagram-logo"></a><!--Your instagram homepage link inser in place of "#"-->
+                <a href="#"><img src="/static/images/facebook logo.png" class="social-media" alt="facebook-logo"></a>
+                <a href="#"><img src="/static/images/linkedin logo.png" class="social-media" alt="linkedin-logo"></a>
+                <a href="#"><img src="/static/images/twitter logo.png" class="social-media" alt="twitter-logo"></a>
+
+            </div>
+            <!--Social Media Links end-->
+            <div class="header-content">
+                <div class="header-content-box">
+                <div class="firstline"><span class="color">Özkan </span>Şişik</div>
+                <div class="secondline">
+                I'm a
+            <span class="txt-rotate color" data-period="1200"data-rotate='[ " QA Engineer.", " Musician.", " Traveller." ]'></span>
+            <span class="slash">|</span>
+        </div>
+                    <div class="contact">
+                    </div>    
+            </div>
+            </div>
+            <!--header image-->
+            <div class="header-image">
+            <img src="/static/images/man.jpg" alt="logo">
+            </div>
+            <!--header image end-->
+        </div>
+           <!--Header End-->
+        <!--HomePage End-->
+        <!--Main-Section End-->
+        <!--about-->
+        <div id="about">
+            <div class="color-changer">
+            <div class="color-panel">
+                <img src="/static/images/gear.png" alt="">
+            </div>
+            <div class="color-selector">
+                <div class="heading">Custom Colors</div>
+                <div class="colors">
+                    <ul >
+                    <li>
+                        <a href="#0" class="color-red " title="color-red"></a>
+                    </li>
+                    <li>
+                        <a href="#0" class="color-purple" title="color-purple"></a>
+                    </li>
+                    <li>
+                        <a href="#0" class="color-malt" title="color-malt"></a>
+                    </li>
+                    <li>
+                        <a href="#0" class="color-green" title="color-green"></a>
+                    </li>
+                    <li>
+                        <a href="#0" class="color-blue" title="color-blue"></a>
+                    </li>
+                    <li>
+                        <a href="#0" class="color-orange" title="color-orange"></a>
+                    </li>
+                    </ul>
+                </div>
+            </div>
+            </div>
+            <!--about content-->
+            <div id="about-content">
+                <div class="about-header">
+                    About <span class="color">Me</span>
+                    <span class ="header-caption">Get to Know <span class="color"> me.</span></span>
+                </div>
+                <div class="about-main">
+            <div class="about-first-paragraph wow">
+            <!--about description-->
+               <span class="about-first-line">
+                    I'm an 
+                    <span class="color">QA Engineer</span>
+                     based in Istanbul , Turkey </span>
+                     <br>
+               <span class="about-second-line"> With 6 years of experience as a QA Engineer, I enjoy every step while working.</span>
+            </div>
+            <!--about picture-->
+            <div class="about-img">
+                <img src="/static/images/about.jpg" alt="Your Image">
+            </div>
+            </div>
+    
+            </div>
+            <div id="skills">
+                <div class="skills-header">
+                     My <span class="color"> Skills</span>
+                </div>
+                <div class="skills-content " style="text-align: center;">
+                    <div class="skill-html skill">
+                        <div class="skill-text">
+                    <div class="html">
+                        Selenium/Python
+                    </div>
+                        </div>
+                    <div class="html-prog wow prog">
+                 <div class="html-progress wow">95%</div>
+                    </div>
+                    </div>
+                    <div class="skill-html skill">
+                        <div class="skill-text">
+                    <div class="html">
+                      Api Testing
+                    </div>
+                        </div>
+                    <div class="html-prog wow prog">
+                 <div class="js-progress wow">90%</div>
+                    </div>
+                    </div>
+                    <div class="skill-html skill">
+                        <div class="skill-text">
+                    <div class="html">
+                        Team Management
+                    </div>
+                        </div>
+                    <div class="html-prog wow prog">
+                 <div class="adobe-progress wow">83%</div>
+                    </div>
+                    </div>
+                    <div class="skill-html skill">
+                        <div class="skill-text">
+                    <div class="html">
+                        Test Management
+                    </div>
+                        </div>
+                    <div class="html-prog wow prog">
+                 <div class="php-progress wow">87%</div>
+                    </div>
+                    </div>
+                    <div class="skill-html skill">
+                        <div class="skill-text">
+                    <div class="html">
+                        Jenkins
+                    </div>
+                        </div>
+                    <div class="html-prog wow prog">
+                 <div class="jquery-progress wow">94%</div>
+                    </div>
+                    </div>
+                    <div class="skill-html skill">
+                        <div class="skill-text">
+                    <div class="html">
+                        Cypress
+                    </div>
+                        </div>
+                    <div class="html-prog wow prog">
+                 <div class="seo-progress wow">84%</div>
+                    </div>
+                    </div>
+                </div>
+            </div>
+    <!--copyright-section You Can Remove After Downloading-->
+            <div class="footer">
+             <div class="footer-text">
+                 <img src="/static/images/copyright.png" alt="copyright-img" class="images" height="14px"> Özkan Şişik
+             </div>
+            </div>
+    <!--copyright-section-->
+        </div>
+        <!--about end-->
+        <!--portfolio-->
+        <div id="portfolio">
+            <div class="color-changer">
+                <div class="color-panel">
+                    <img src="/static/images/gear.png" alt="">
+                </div>
+                <div class="color-selector">
+                    <div class="heading">Custom Colors</div>
+                    <div class="colors">
+                        <ul >
+                        <li>
+                            <a href="#0" class="color-red " title="color-red"></a>
+                        </li>
+                        <li>
+                            <a href="#0" class="color-purple" title="color-purple"></a>
+                        </li>
+                        <li>
+                            <a href="#0" class="color-malt" title="color-malt"></a>
+                        </li>
+                        <li>
+                            <a href="#0" class="color-green" title="color-green"></a>
+                        </li>
+                        <li>
+                            <a href="#0" class="color-blue" title="color-blue"></a>
+                        </li>
+                        <li>
+                            <a href="#0" class="color-orange" title="color-orange"></a>
+                        </li>
+                        </ul>
+                    </div>
+                </div>
+                </div>
+            <div class="portfolio-header"> <span class="color"> My </span> Portfolio
+            <span class ="header-caption"> Some Of My <span class="color"> Works</span></span></div>
+             <div id="portfolio-content">
+                 <div class="portfolio portfolio-first">
+                     <div class="portfolio-image">
+                        <img src="/static/images/portfolio-first.jpg" alt="portfolio-first">
+                     </div>
+                     <div class="portfolio-text">
+                         <h2>App Idea</h2>
+                         <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ad ut optio repellat cupiditate 
+                             expedita eius dignissimos. Id cumque placeat minima ad laudantium suscipit voluptatem ducimus</p>
+                         <div class="button"><a href="#"><button><span class="index"> View Project<i class="gg-arrow-right"></i></span></button></a></div>
+                     </div>
+                 </div>
+                 <div class="portfolio portfolio-second">
+                    <div class="portfolio-image">
+                        <img src="/static/images/portfolio-second.jpg" alt="portfolio-second">
+                    </div>
+                    <div class="portfolio-text">
+                        <h2>Web Designing</h2>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Id cumque placeat minima ad laudantium suscipit
+                             voluptatem ducimus. Id cumque placeat minima ad laudantium suscipit voluptatem ducimus</p>
+                        <div class="button"><a href="#"><button><span class="index"> View Project<i class="gg-arrow-right"></i></span></button></a></div>
+                    </div>
+                </div>
+             
+                <div class="portfolio portfolio-third">
+                    <div class="portfolio-image">
+                        <img src="/static/images/portfolio-third.jpg" alt="portfolio-third">
+                    </div>
+                    <div class="portfolio-text">
+                        <h2>UI Designing</h2>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ad ut optio repellat cupiditate expedita eius dignissimos
+                            .. Id cumque placeat minima ad laudantium suscipit voluptatem ducimus</p>
+                        <div class="button"><a href="#"><button><span class="index"> View Project<i class="gg-arrow-right"></i></span></button></a></div>
+                    </div>
+                </div>
+                <div class="portfolio portfolio-fourth">
+                    <div class=" portfolio-image">
+                        <img src="/static/images/portfolio-fourth.jpg" alt="portfolio-fourth">
+                    </div>
+                    <div class="portfolio-text">
+                        <h2>Wow Graphics</h2>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ad ut optio repellat cupiditate
+                             expedita eius dignissimos. Id cumque placeat minima ad laudantium suscipit voluptatem ducimus</p>
+                        <div class="button"><a href="#"><button><span class="index"> View Project<i class="gg-arrow-right"></i></span></button></a></div>
+                    </div>
+                </div>
+                 </div>
+                    <!--copyright-section You Can Remove After Downloading-->
+            <div class="footer">
+                <div class="footer-text">
+                    <img src="/static/images/copyright.png" alt="copyright-img" class="images" height="14px"> Özkan Şişik
+                </div>
+               </div>
+       <!--copyright-section-->
+             </div>
+        <!--portfolio end-->
+        <!--blog-->
+        <div id="blog">
+            <div class="color-changer">
+                <div class="color-panel">
+                    <img src="/static/images/gear.png" alt="">
+                </div>
+
+                </div>
+        <div class="blog-header"> Blogs</span>
+            <aside class="sidebar">
+                <div class="category">
+                    <h2>Category</h2>
+                    <ul class="category-list">
+                        {% for item in cat %}
+                        <li class="list-items" data-aos="fade-left" data-aos-delay="100">
+                          
+                            <a href="{% url 'category_show' category_slug=item.slug %}">{{item.title}}</a>
+                            <br><br>
+                            <!-- <span>(05)</span> -->
+                          
+                        </li>
+                        {% endfor %}
+                    </ul>
+                </div>
+                <div class="category">
+                    
+                    <ul class="category-list">
+                    </ul>
+                </div>
+            <a onClick="filter(); return false;" href="javascript:void(0)" >One Way</a>
+            <span class ="header-caption"> My Latest <span class="color"> blog posts.</span></span></div> 
+            <div class="blog-content">   
+                {% for post in posts %}
+                <div class="blogs">
+                     </a>
+                    <div class="img">
+                        <a href="{{post.get_absolute_url}}">  <img src="{{post.image.url}}" alt="blog-one"> </a>
+                       <div class="blog-date">{{post.yearpublished}}</div>
+                    </div>
+                    <div class="blog-text">
+                        <h3>{{post.title}}</h3>
+                        <p>{{post.content}}.</p>
+                        
+                    </div></a>
+                    
+                </div>  
+                {% endfor %}        
+            </div>
+               <!--copyright-section You Can Remove After Downloading-->
+               <div class="footer">
+                <div class="footer-text">
+                    <img src="/static/images/copyright.png" alt="copyright-img" class="images" height="14px"> Özkan Şişik
+                </div>
+               </div>
+       <!--copyright-section-->
+        </div>
+        <!--blog end-->
+        <!--contact-->
+     <div id="contact">
+        <div class="color-changer">
+            <div class="color-panel">
+                <img src="/static/images/gear.png" alt="">
+            </div>
+            <div class="color-selector">
+                <div class="heading">Custom Colors</div>
+                <div class="colors">
+                    <ul >
+                    <li>
+                        <a href="#0" class="color-red " title="color-red"></a>
+                    </li>
+                    <li>
+                        <a href="#0" class="color-purple" title="color-purple"></a>
+                    </li>
+                    <li>
+                        <a href="#0" class="color-malt" title="color-malt"></a>
+                    </li>
+                    <li>
+                        <a href="#0" class="color-green" title="color-green"></a>
+                    </li>
+                    <li>
+                        <a href="#0" class="color-blue" title="color-blue"></a>
+                    </li>
+                    <li>
+                        <a href="#0" class="color-orange" title="color-orange"></a>
+                    </li>
+                    </ul>
+                </div>
+            </div>
+            </div>
+         <div class="contact-header">Contact <span class="color"> Me</span>
+        <div class="contact-header-caption"> <span class="color"> Get</span> In Touch.</div></div>
+        <div class="contact-content">
+            <!--Contact form-->
+             <div class="contact-form">
+                 <div class="form-header">
+                     Message Me
+                 </div>
+                 <form id="myForm" action="#">
+                    <div class="input-line">
+                        <input  id="name" type="text" placeholder="Name" class="input-name">
+                        <input id="email" type="email" placeholder="Email"  class="input-name">
+                    </div>
+                    <input type="text" id="subject" placeholder="subject" class="input-subject">
+                    <textarea id ="body" class="input-textarea" placeholder="message"></textarea>
+                    <button type="button" id ="submit" value="send">Submit</button>
+                 </form>
+               
+             </div>
+            <!--Contact form-->
+            <!--Contact information-->
+             <div class="contact-info">
+                <div class="contact-info-header">
+                    Contact Info
+                </div>
+                <div class="contact-info-content">
+                <div class="contect-info-content-line">
+                    <img src="/static/images/icon-name.png" class="icon" alt="name-icon">
+                    <div class="contact-info-icon-text">
+                        <h6>Name</h6>
+                        <p>Özkan Şişik</p>
+                  </div>
+                </div>
+                <div class="contect-info-content-line">
+                  <img src="/static//images/icon-location.png" class="icon" alt="location-icon">
+                  <div class="contact-info-icon-text">
+                      <h6>Location</h6>
+                      <p>Kadıköy, İstanbul</p>
+                </div>
+              </div>
+              <div class="contect-info-content-line">
+                  <img src="/static//images/icon-phone.png" class="icon" alt="phone-icon">
+                  <div class="contact-info-icon-text">
+                      <h6>Call</h6>
+                      <p>+9865376531</p>
+                </div>
+              </div>
+              
+              <div class="contect-info-content-line">
+                  <img src="/static//images/icon-email.png" class="icon" alt="email-icon">
+                  <div class="contact-info-icon-text">
+                      <h6>Email</h6>
+                      <p>Info@example.com</p>
+                </div>
+              </div>
+                </div>
+            <!--Contact information end-->
+           </div>
+        </div>
+                    <!--copyright-section You Can Remove After Downloading-->
+                    <div class="footer">
+                        <div class="footer-text">
+                            <img src="/static//images/copyright.png" alt="copyright-img" class="images" height="14px"> Özkan Şişik
+                        </div>
+                       </div>
+               <!--copyright-section-->
+     </div>
+        <!--contact end-->
+    </div>
+    <!--all the divisions-->
+    <script src="/static/js/jquery.min.js"></script>
+    <script src="/static/js/index.js"></script>
+
+
+</body>
+</html>
